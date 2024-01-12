@@ -64,3 +64,25 @@
   .subscribe-section-flex-container_right-side #subscribe-btn:active {
     transform: scale(0.97);
   }
+  #subscribe-btn1 {
+    float: left;
+    width: 120px;
+    padding: 16px 0;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  #subscribe-btn1:hover {
+    color: #fff;
+    background: #a4816a;
+    transform: scale(1.03);
+  }
+  #subscribe-btn1:active {
+    transform: scale(0.97);
+  }

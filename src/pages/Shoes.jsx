@@ -1,12 +1,12 @@
 import React from "react";
 import ClothesAccessoriesPage from "../components/ClothesAccessoriesPage";
 
-function Clothes(){
+function Shoes(){
     return (
         <main className="full-block">
-            <ClothesAccessoriesPage type="clothes"/>
+            <ClothesAccessoriesPage type="shoes"/>
         </main>
     )
 }
 
-export default Clothes;
+export default Shoes;

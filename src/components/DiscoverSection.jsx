@@ -9,7 +9,7 @@ function DiscoverSection(){
                 <div className="category-content">
                     <div className="category-content-left-side">
                         <div className="category-content-left-side-fashion">
-                            <DiscoverBanner name="Clothes" To="/clothes"/>
+                            <DiscoverBanner name="Shoes" To="/shoes"/>
                         </div>
                         <div className="category-content-left-side-best-sale big-category">
                             <DiscoverBanner name="Popular Items" link="popular_items"/>

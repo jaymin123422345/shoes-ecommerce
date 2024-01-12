@@ -20,8 +20,8 @@ function DiscoverCategory1(props){
     return (
         <div className="category-description">
             <div className="category-description_content">
-                <h2>{props.name}</h2>
-                <span>Best trending 2023</span><br/>
+                <h2 className="text-white">{props.name}</h2>
+                <span className="text-white">Best trending 2023</span><br/>
                 {props.To ? <NavLink to={props.To}>Discover Store</NavLink> :
                 <a onClick={() => scrollToSection(props.link, 1)}>Discover Store</a>}
             </div>

@@ -1,7 +1,7 @@
-.clothes-accessories{
+.shoes-accessories{
     margin-top: 60px;
 }
-.clothes-accessories-content {
+.shoes-accessories-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,13 +12,13 @@
     border-radius: 5px; 
   }
   
-  .clothes-accessories-form {
+  .shoes-accessories-form {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .clothes-accessories-group {
+  .shoes-accessories-group {
     margin-right: 60px;
   }
   

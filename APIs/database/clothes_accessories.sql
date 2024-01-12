@@ -116,17 +116,17 @@ CREATE TABLE `product` (
 
 INSERT INTO `product` (`idproduct`, `name`, `type`, `description`, `category`, `price`, `times_sold`, `date_added`, `imagepath`, `imagepathhover`, `old_price`) VALUES
 (1, 'Watch', 'accessories', 'useful watch', 'Women', '19.00', 3, '2023-05-25 00:42:26', 'dist/images/product9.jpg', NULL, NULL),
-(2, 'Jeans', 'clothes', 'Description of jeans', 'Men', '49.99', 10, '2023-05-25 00:54:09', 'dist/images/product15.jpg', NULL, 55),
-(3, 'Dress', 'clothes', 'Description of dress', 'Women', '59.99', 3, '2023-05-25 00:54:09', 'dist/images/product12.jpg', NULL, NULL),
-(4, 'Shoes', 'clothes', 'Description of shoes', 'Men', '79.99', 0, '2023-05-25 00:54:09', 'dist/images/product6.jpg', NULL, NULL),
+(2, 'Jeans', 'shoes', 'Description of jeans', 'Men', '49.99', 10, '2023-05-25 00:54:09', 'dist/images/product15.jpg', NULL, 55),
+(3, 'Dress', 'shoes', 'Description of dress', 'Women', '59.99', 3, '2023-05-25 00:54:09', 'dist/images/product12.jpg', NULL, NULL),
+(4, 'Shoes', 'shoes', 'Description of shoes', 'Men', '79.99', 0, '2023-05-25 00:54:09', 'dist/images/product6.jpg', NULL, NULL),
 (5, 'Handbag', 'accessories', 'Description of handbag', 'Women', '39.99', 0, '2023-05-25 00:54:09', 'dist/images/product5.jpg', NULL, NULL),
-(6, 'T-Shirt', 'clothes', 'Description of t-shirt', 'Men', '19.99', 0, '2023-05-25 00:54:09', 'dist/images/product13.jpg', NULL, 0),
+(6, 'T-Shirt', 'shoes', 'Description of t-shirt', 'Men', '19.99', 0, '2023-05-25 00:54:09', 'dist/images/product13.jpg', NULL, 0),
 (7, 'Jeans', 'Jeans', 'Jeans for girls', 'Kids', '34.99', 0, '2023-05-25 00:54:09', 'dist/images/product16.jpg', NULL, NULL),
 (8, 'Handbag', 'accessories', 'Description of hat', 'Kids', '24.99', 5, '2023-05-25 00:54:09', 'dist/images/product8.jpg', NULL, 56),
 (9, 'Watch', 'accessories', 'Watch for Mens', 'Men', '89.99', 1, '2023-05-25 00:54:09', 'dist/images/product9.jpg', NULL, NULL),
 (10, 'Sunglasses', 'accessories', 'Description of sunglasses', 'Kids', '59.99', 8, '2023-05-25 00:54:09', 'dist/images/product4.jpg', NULL, 88),
-(11, 'Shoes', 'clothes', 'Mens shoes', 'Men', '29.99', 0, '2023-05-25 00:54:09', 'dist/images/product1.jpg', NULL, NULL),
-(13, 'Shirt', 'clothes', 'shirt', 'Men', '222.00', 2, '2023-05-24 23:04:31', 'dist/images/product14.jpg', '', 250);
+(11, 'Shoes', 'shoes', 'Mens shoes', 'Men', '29.99', 0, '2023-05-25 00:54:09', 'dist/images/product1.jpg', NULL, NULL),
+(13, 'Shirt', 'shoes', 'shirt', 'Men', '222.00', 2, '2023-05-24 23:04:31', 'dist/images/product14.jpg', '', 250);
 
 -- --------------------------------------------------------
 

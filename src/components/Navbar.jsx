@@ -9,6 +9,7 @@ function Navbar(){
     const { isUserLogged, setIsUserLogged, handleLogout } = useContext(
         AppContext
       );
+      let userData = localStorage.getItem('user') === 'null' ? '' : JSON.parse(localStorage.getItem('user'));
     const isUserLoggedLS = localStorage.getItem("isUserLogged") === "true";
     function logOut(){
         localStorage.setItem("isUserLogged", false)
@@ -25,16 +26,17 @@ function Navbar(){
                         </div>
                         <div className="navigation-right-side">
                             <nav>
+                                {(userData ? userData?.role !== 'admin' : true)? (
                             <ul>
                                 <li>
                                     <NavLink className="page" to="/">Home</NavLink>                        
                                 </li>
                                 <li>
-                                    <NavLink className="page"  to="/clothes">Clothes</NavLink>                        
+                                    <NavLink className="page"  to="/shoes">Shoes</NavLink>                        
                                 </li>
-                                <li>
+                                {/* <li>
                                     <NavLink className="page"  to="/accessories">Accessories</NavLink>                        
-                                </li>
+                                </li> */}
                                 <li>
                                     <NavLink className="page"  to="/contactUs">Contact Us</NavLink>                        
                                 </li>
@@ -55,10 +57,28 @@ function Navbar(){
                                         <img src="./../src/assets/shopping-cart.svg" width="30px" alt=""/>
                                     </NavLink>                        
                                 </li>
+                            </ul>
+                            ):(
+                                <ul>
                                 <li>
-                                    <NavLink to="/checkout">Checkout</NavLink>                        
+                                    <NavLink className="page" to="/">Home</NavLink>                        
+                                </li>
+                                <li>
+                                    <NavLink className="page" to="/adminProduct">Product</NavLink>                        
+                                </li>
+                                {(isUserLogged || isUserLoggedLS) && <li>
+                                   <NavLink to="/" onClick={logOut}  className="custom-active-class">Log Out</NavLink>                     
+                                </li>}
+                                {(isUserLogged || isUserLoggedLS) && <li>
+                                   <span className="navlinkName">Hello {JSON.parse(localStorage.getItem("user")).username}<br/>Your are Logged as Admin</span>                     
+                                </li>}
+                                <li>
+                                    <NavLink to="/cart">
+                                        <img src="./../src/assets/shopping-cart.svg" width="30px" alt=""/>
+                                    </NavLink>                        
                                 </li>
                             </ul>
+                            )}
                             </nav>
                         </div>
                     </div>

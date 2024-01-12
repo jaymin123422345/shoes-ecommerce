@@ -4,10 +4,10 @@ import "./../styles/GetProductsForm.css";
 function GetProductsForm({handleChange, handleSubmit, search, category, price, resetOnClick}) {
 
   return (
-    <section className="clothes-accessories full-block">
-      <div className="container clothes-accessories-content">
-        <form className="clothes-accessories-form" onSubmit={handleSubmit}>
-          <div className="clothes-accessories-group">
+    <section className="shoes-accessories full-block">
+      <div className="container shoes-accessories-content">
+        <form className="shoes-accessories-form" onSubmit={handleSubmit}>
+          <div className="shoes-accessories-group">
             <label htmlFor="search">Search Product:</label>
             <input
               id="search"
@@ -18,7 +18,7 @@ function GetProductsForm({handleChange, handleSubmit, search, category, price, r
               onChange={handleChange}
             />
           </div>
-          <div className="clothes-accessories-group">
+          <div className="shoes-accessories-group">
             <label htmlFor="category">Category:</label>
             <label>
               <input
@@ -51,7 +51,7 @@ function GetProductsForm({handleChange, handleSubmit, search, category, price, r
               Kids
             </label>
           </div>
-          <div className="clothes-accessories-group">
+          <div className="shoes-accessories-group">
             <label htmlFor="price">Sort by price</label>
             <input
               type="range"

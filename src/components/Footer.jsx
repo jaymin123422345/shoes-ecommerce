@@ -18,7 +18,7 @@ function Footer(){
                 <div className="footer-section-center">
                     <ul>
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="/clothes">Clothes</NavLink></li>
+                    <li><NavLink to="/shoes">Shoes</NavLink></li>
                     <li><NavLink to="/contactus">Contact Us</NavLink></li>
                     {!isUserLoggedLS && <li><NavLink to="/login">Log In</NavLink></li>}
                     {!isUserLoggedLS && <li><NavLink to="/signup">Sign Up</NavLink></li>}

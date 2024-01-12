@@ -52,8 +52,8 @@
 .category-content-left-side-fashion {
     background: url("../assets/woman-category.jpg");
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
     margin-bottom: 40px;
   }
 .category-content-left-side-best-sale {

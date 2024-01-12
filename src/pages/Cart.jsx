@@ -1,6 +1,8 @@
 import React, {useContext} from "react";
 import { AppContext } from "../components/AppContext";
 import ProductCard from "./../components/ProductCard";
+import "../styles/SubscribeSection.css";
+import { Link } from "react-router-dom";
 
 
 function Cart(){
@@ -27,6 +29,13 @@ function Cart(){
                     <div className="grid-container a" id="clothes_grid">
                     {productsToRender}
                     </div>
+                    <div className="d-flex justify-content-center">
+              <Link to={"/checkout"}>
+              <button type="submit" id="subscribe-btn1">
+                CheckOut
+              </button>
+              </Link>
+                </div>
                 </div>
             </section>
         </main>
